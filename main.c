@@ -1,17 +1,17 @@
 // main.c
 #include <stdio.h>
-#include "funciones.h"
+#include "Funciones.h"
 
 int main() {
     char nombres[10][30];
     float precios[10];
     int n;
 
-    printf("Ingrese la cantidad de productos (máximo 10): ");
+    printf("--------------- Ingrese la cantidad de productos (maximo 10): ------------------\n");
     scanf("%d", &n);
 
     if (n > 10 || n <= 0) {
-        printf("Cantidad inválida.\n");
+        printf("Cantidad invalida.\n");
         return 0;
     }
 
@@ -19,13 +19,13 @@ int main() {
 
     int opcion;
     do {
-        printf("\n===== MENÚ DE OPCIONES =====\n");
+        printf("\n:) -------- MENU DE OPCIONES --------- :p\n");
         printf("1. Mostrar precio total del inventario\n");
         printf("2. Mostrar precio promedio\n");
-        printf("3. Mostrar producto más caro y más barato\n");
+        printf("3. Mostrar producto mas caro y mas barato\n");
         printf("4. Buscar un producto por nombre\n");
         printf("5. Salir\n");
-        printf("Seleccione una opción: ");
+        printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
 
         switch (opcion) {
@@ -42,10 +42,10 @@ int main() {
                 buscarProducto(nombres, precios, n);
                 break;
             case 5:
-                printf("Saliendo del programa...\n");
+                printf("Programa Finalizado\n");
                 break;
             default:
-                printf("Opción no válida.\n");
+                printf("Opcion no valida.\n");
         }
 
     } while (opcion != 5);
