@@ -1,7 +1,7 @@
 // funciones.c
 #include <stdio.h>
 #include <string.h>
-#include "funciones.h"
+#include "Funciones.h"
 
 void ingresarDatos(char nombres[][30], float precios[], int n) {
     for (int i = 0; i < n; i++) {
@@ -31,8 +31,8 @@ void productoMayorMenor(char nombres[][30], float precios[], int n) {
         if (precios[i] > precios[i_mayor]) i_mayor = i;
         if (precios[i] < precios[i_menor]) i_menor = i;
     }
-    printf("\nProducto más caro: %s (%.2f)\n", nombres[i_mayor], precios[i_mayor]);
-    printf("Producto más barato: %s (%.2f)\n", nombres[i_menor], precios[i_menor]);
+    printf("\nProducto mas caro: %s (%.2f)\n", nombres[i_mayor], precios[i_mayor]);
+    printf("Producto mas barato: %s (%.2f)\n", nombres[i_menor], precios[i_menor]);
 }
 
 void buscarProducto(char nombres[][30], float precios[], int n) {
